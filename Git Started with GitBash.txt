@@ -1,0 +1,158 @@
+15:14 15/02/2017
+GIT STARTED WITH GITBASH
+----------------------------
+Fabio@Fabio-PC MINGW64 ~
+$ dir
+3D\ Objects
+A
+AppData
+b.jpg
+Contacts
+Cookies
+copia.jpg
+Dati\ applicazioni
+Desktop
+Documenti
+Documents
+Downloads
+Favorites
+Google\ Drive
+Impostazioni\ locali
+Links
+Local\ Settings
+Menu\ Avvio
+Modelli
+Music
+My\ Documents
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{2731fe95-6d40-11e6-96b7-95e1008592f3}.TM.blf
+NTUSER.DAT{2731fe95-6d40-11e6-96b7-95e1008592f3}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{2731fe95-6d40-11e6-96b7-95e1008592f3}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+Pictures
+Recenti
+Risorse\ di\ rete
+Risorse\ di\ stampa
+Saved\ Games
+Searches
+SendTo
+Tracing
+workspace
+xobglu16.dll
+xobglu32.dll
+
+Fabio@Fabio-PC MINGW64 ~
+$ pwd
+/c/Users/Fabio
+
+Fabio@Fabio-PC MINGW64 ~
+$ mkdir projects
+
+Fabio@Fabio-PC MINGW64 ~
+$ cd projects/
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ git version
+git version 2.11.1.windows.1
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ git config --global user.name "Palindro"
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ git config --global user.email "mamonefabio87@gmail.com"
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ git config --global --list
+user.name=Palindro
+user.email=mamonefabio87@gmail.com
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ git clone https://github.com/FabioMamone/myRepository.git
+Cloning into 'myRepository'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ ls
+myRepository/
+
+Fabio@Fabio-PC MINGW64 ~/projects
+$ cd myRepository/
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ echo "Test Git Quick Start demo" >> start.txt
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ ls
+README.md  start.txt
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ cat start.txt
+Test Git Quick Start demo
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        start.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git add start.txt
+warning: LF will be replaced by CRLF in start.txt.
+The file will have its original line endings in your working directory.
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   start.txt
+
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git commit -m "adding start text file"
+[master b6b651d] adding start text file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 start.txt
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ get push origin master
+bash: get: command not found
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$ git push origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com/': FabioMamone
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/FabioMamone/myRepository.git
+   04f2586..b6b651d  master -> master
+
+Fabio@Fabio-PC MINGW64 ~/projects/myRepository (master)
+$
